@@ -1,33 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Next.js Boilerplate
 
-## Getting Started
+Este é um boilerplate moderno para projetos Next.js, configurado com as melhores práticas e ferramentas de desenvolvimento.
 
-First, run the development server:
+## Tecnologias Principais
 
+- **Next.js 15.3.4**: Framework React para produção
+- **React 19**: Biblioteca JavaScript para UI
+- **TypeScript**: JavaScript com tipagem estática
+- **TailwindCSS**: Framework CSS utilitário
+- **Vite**: Build tool e servidor de desenvolvimento
+- **Vitest**: Framework de testes rápido
+- **ESLint**: Linter para JavaScript/TypeScript
+- **Prettier**: Formatação de código
+- **pnpm**: Gerenciador de pacotes
+
+## Como Criar um Novo Projeto a partir deste Boilerplate
+
+### 1. Clonar o Repositório
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/evandro/nextjs-boilerplate.git nome-do-seu-projeto
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Configurar o Projeto
+```bash
+cd nome-do-seu-projeto
+pnpm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Iniciar o Desenvolvimento
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Scripts Disponíveis
 
-## Learn More
+```bash
+# Desenvolvimento com Turbopack
+pnpm dev
 
-To learn more about Next.js, take a look at the following resources:
+# Build de produção
+pnpm build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Iniciar servidor de produção
+pnpm start
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Executar testes
+pnpm test
+
+# Executar testes com cobertura
+pnpm test:coverage
+
+# Verificar linting
+pnpm lint
+
+# Verificar tipos TypeScript
+pnpm typecheck
+```
+
+## Estrutura do Projeto
+
+```
+src/
+├── app/           # Páginas e layout do Next.js
+```
+
+## Recursos Incluídos
+
+- Configuração completa do TypeScript
+- Setup de testes com Vitest
+- Linting e formatação de código
+- Configuração do TailwindCSS
+- Configuração do ESLint
+- Setup de CI/CD com GitHub Actions
+- Configuração do Lefthook para hooks Git
+
+## Requisitos
+
+- Node.js (versão LTS recomendada)
+- pnpm (gerenciador de pacotes)
+
+## Licença
+
+MIT.
 
 ## Deploy on Vercel
 
