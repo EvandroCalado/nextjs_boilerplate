@@ -10,7 +10,8 @@
     "typecheck": "tsc --project tsconfig.json --noEmit",
     "test": "vitest",
     "test:ci": "vitest --run --passWithNoTests",
-    "test:coverage": "vitest --coverage"
+    "test:coverage": "vitest --coverage",
+    "postinstall": "pnpx lefthook install"
   },
   "dependencies": {
     "next": "15.3.4",
